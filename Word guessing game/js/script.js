@@ -82,7 +82,7 @@ function initGame(e){
 
     setTimeout(() => {
         if(corrects.length === word.length){
-            alert('Congrats> You found the word ${word.toUpperCase()}');
+            alert(`Congrats> You found the word ${word.toUpperCase()}`);
             randomWorld();
         }
     
