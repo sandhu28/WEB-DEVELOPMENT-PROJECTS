@@ -1,46 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: #1bb295;
 }
-.wrapper{
+
+.wrapper {
     width: 430px;
     background: white;
     border-radius: 10px;
 }
-.wrapper h1{
+
+.wrapper h1 {
     font-size: 25px;
     font-weight: 500;
     padding: 20px 25px;
     border-bottom: 1px solid #ccc;
 }
-.wrapper .content{
+
+.wrapper .content {
     margin: 25px 25px 35px;
 }
 
-.content .typing-input{
+
+.content .typing-input {
     z-index: -999;
     opacity: 0;
     position: absolute;
 }
 
-.content .inputs{
+.content .inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.inputs input{
+
+.inputs input {
     height: 57px;
     width: 56px;
     margin: 4px;
@@ -51,15 +56,18 @@ body{
     text-transform: uppercase;
     background: none;
     border-radius: 5px;
-    border: 1px solid #b5b5b5; 
+    border: 1px solid #b5b5b5;
 }
-.inputs input:first-child{
-    margin-left:0px;
+
+.inputs input:first-child {
+    margin-left: 0px;
 }
-.content .details{
+
+.content .details {
     margin: 20px 0 25px;
 }
-.content .reset-btn{
+
+.content .reset-btn {
     width: 100%;
     cursor: pointer;
     outline: none;
