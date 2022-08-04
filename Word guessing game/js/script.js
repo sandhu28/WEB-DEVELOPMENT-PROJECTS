@@ -60,7 +60,8 @@ function randomWorld() {
 
 function initGame(e){
     let key= e.target.value;
-    if(key.match(/^[A-Za-z]+$/) && !incorrects.includes(` ${key}`) && !corrects.includes(` ${key}`)){
+    // /^[A-Za-z]+$/
+    if(key.match(/[A-Za-z]/) && !incorrects.includes(` ${key}`) && !corrects.includes(` ${key}`)){
         // console.log(key);
         if(word.includes(key)){
             for (let i = 0; i < word.length; i++) {
@@ -69,7 +70,7 @@ function initGame(e){
                     inputs.querySelectorAll("input")[i].value= key;
                 }
             }
-            console.log("letter found");
+            // console.log("letter found");
         }
         else{
             maxGuesses--;
